@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/Styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/aac5dd37e0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div id = nav>
+            <h1>CJ</h1>
+            <a href = "./index.html">Home</a>
+            <a href = "./portfolio.html">Projects</a>
+            <a href = "">Contact</a>
+            </div>
+        </nav>  
+        
+        <div id = "puzzle">
+            <img src = "/Images/edge2edge-media-x21KgBfOd_4-unsplash.jpg" height=auto width=50%/>
+            <h2>I just may be that missing piece of your puzzle.<h2>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div id="form">
+            <form action="https://formspree.io/f/xoqgajae" method="POST" >
+                <h2>Contact</h2>
+                <div id="inputs">
+                    <label htmlFor="name" class="label">Name</label>
+                    <input type="text" name="name" class="text" aria-label=" Name" required/>
+
+                    <label htmlFor="email" class="label">Email</label>
+                    <input type="text" name="email" class="text" aria-label="Email" required/>
+
+                    <label htmlFor="message" class="label">Message</label>
+                    <textarea name="message" id="message" aria-label="Message" required></textarea>
+                </div>
+                <button id="message-button" type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id = "connect">
+            <h3>Let's Connect!</h3><br/>
+            <div class = "contact-info">
+                <p><i class="fa-solid fa-envelope"></i>corina.jewer@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>(709)-282-8311</p>
+            </div>
+        </div>
+        <div class = "socials">
+            <a href = "https://www.instagram.com/corinachev?" target = "_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/corina-jewer-709lw24" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin">    </i></a>
+            <a href = "https://www.youtube.com/@corinajewer997" target = "_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i>  </a>
+            <a href = "https://www.facebook.com/corina.jewer.391" target = "_blank" aria-label="Facebook"><i class="fa-brands fa-facebook">    </i></a>                   
+        </div> 
+        
+        <div id = "copy">
+            <p>&copy; 2023 Corina Jewer</p>
+        </div> 
+    </footer>
+
+    <script src="/script.js"></script>  
+    
+</body>
+</html>

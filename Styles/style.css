@@ -1,0 +1,637 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    margin-left:48px; 
+    margin-right:48px;
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    background-color: black;
+    height:fit-content;   
+}   
+
+
+#nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    width:100%;
+    padding: 8px;
+}
+
+#nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#nav a:hover{
+    transform: translateY(-4px);
+}
+
+nav h1{
+    font-size: 48px;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;   
+}
+
+
+#name h2 {
+    color: white;
+    font-size: 56px;
+  
+}
+
+#name p {
+    color: white;
+    font-size: 24px;
+    
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    gap:48px; 
+    margin-left: 100px;
+    justify-content: center;
+}
+
+
+#about h2{
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#about{
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:24px;
+    height:400px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#about p{
+  align-self: center;
+  text-align: center;
+  width:700px;
+  font-size: 18px;
+}
+
+#about button{
+    border-radius: 8px;
+    width:fit-content;
+    padding:8px 12px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    align-self: center;
+    text-align: center;
+    background-color:#AA0000;
+    color: white;
+    border: none;
+    opacity: .77;
+    cursor: pointer;  
+    transition: opacity 0.4s 
+}
+
+#about button:hover {
+    opacity:1
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ededed;
+    padding: 24px;
+    height: 600px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills h3{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#carousel {    
+    display: flex;
+    justify-content: space-evenly;
+    gap: 24px;
+    margin-top: 36px;
+   
+}  
+  
+.carousel-block {
+    width:700px;
+    height: fit-content;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px; 
+}
+
+.carousel-block i{
+    background-color: transparent;
+    font-size: 48px;
+    padding:8px;
+}
+
+.carousel-block h4{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.column p {
+    flex-basis: calc(30%); 
+    margin-bottom: 4px; 
+    font-size: 16px;
+}
+
+.column2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.column2 p {
+    flex-basis: calc(40%); 
+    margin-bottom: 4px; 
+}
+
+.column3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.column3 p {
+    flex-basis: calc(40%); 
+    margin-bottom: 4px; 
+}
+
+#portfolio{    
+    position:relative;
+    text-align: center;
+    height:500px;  
+}
+
+#button1 {
+    position: absolute;
+    top: 20%; 
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 8px;
+    width:fit-content;
+    padding:8px 12px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    align-self: center;
+    text-align: center;
+    background-color: #AA0000;
+    color: white;
+    border: none;
+    opacity: .77;
+    cursor: pointer;
+    transition: opacity 0.4s
+}
+
+#button1:hover{
+    opacity: 1
+}
+
+#button2:hover{
+    opacity: 1
+}
+
+#button2 {
+    position: absolute;
+    top: 20%; 
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 8px;
+    width:fit-content;
+    padding:8px 12px;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    align-self: center;
+    text-align: center;
+    background-color: #AA0000;
+    color: white;
+    border: none;
+    opacity: .77;
+    cursor: pointer;
+    transition: opacity 0.4s
+}
+
+footer{
+    background-color:black;
+    color:white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;   
+}
+
+#connect{
+    align-items: center;
+}
+
+.socials{
+   display: flex;
+   gap: 24px;
+   font-size: 30px;
+   align-items: center;
+}
+
+.socials a {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socials a:hover {
+    transform: translateY(-4px); 
+}
+
+#copy{
+  margin-top: 72px;
+}
+
+.carousel-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+} 
+
+.contact-info i {
+    margin-right: 10px; 
+}
+
+
+@media only screen and (min-width: 921px) and (max-width: 1159px){
+    #name h2 {      
+        font-size: 48px;
+        white-space: nowrap;  
+    }
+    
+    #name p {     
+        font-size: 20px;    
+    }
+
+    #name {    
+        gap:36px; 
+        margin-left: 36px;    
+    }
+
+    #me{
+        width:400px;
+    }
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 920px){
+    #name h2 {      
+        font-size: 32px;
+        white-space: nowrap;  
+    }
+    
+    #name p {     
+        font-size: 16px;    
+    }
+    
+    #name {    
+        gap:36px; 
+        margin-left: 20px;    
+    }
+
+    #me{
+        width:300px;
+    }
+
+    #about button{
+        font-size: 14px;
+    }
+
+    #button1{
+        left:66%;
+        font-size: 14px;
+    }
+
+    #button2{
+        left:35%;
+        font-size: 14px;
+    }
+  
+    .carousel-block{
+        width:500px;
+    }
+
+    .column p {
+        flex-basis: calc(35%); 
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+
+    .column2 p {
+        flex-basis: calc(50%); 
+        margin-bottom: 4px; 
+        font-size: 14px;
+    }
+
+    .column3 p {
+        flex-basis: calc(50%); 
+        margin-bottom: 4px; 
+        font-size: 14px;
+    }
+
+    nav h1{
+        font-size: 36px;
+    }
+
+    #about h2{     
+        font-size: 28px;    
+    }
+
+    #about p{
+        width:500px;
+        font-size: 15px;
+      }
+   
+    #skills h3{
+        font-weight: bold;
+        font-size: 20px;
+    } 
+    
+    .socials{
+        display: flex;
+        gap: 18px;
+        font-size: 24px;
+        align-items: center;
+     }
+
+     footer{
+        font-size: 14px;
+    } 
+}
+
+@media only screen and (min-width: 580px) and (max-width: 699px){
+
+    body{
+        margin-left:32px; 
+        margin-right:32px;
+    }
+
+    #name h2 {
+        font-size: 20px;
+        white-space: nowrap;  
+    }
+    
+    #name p {     
+        font-size: 14px;    
+    }
+    
+    #name {    
+        gap:24px; 
+        margin-left: 20px;    
+    }
+
+    #me{
+        width:260px;
+    }
+
+    nav h1{
+        font-size: 28px;
+    }
+
+    nav{
+        font-size: 14px;
+    }
+
+    #about h2{     
+        font-size: 24px;    
+    }
+
+    #about p{
+        width:400px;
+        font-size: 14px;
+    }
+   
+    #about button{
+        font-size: 12px;
+    }
+
+    #button1{
+        left:66%;
+        font-size: 12px;
+    }
+
+    #button2{
+        left:35%;
+        font-size: 12px;
+    }
+  
+    #skills{
+        padding: 16px;
+        height: 600px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #skills h3{
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+
+    .carousel-block{
+        width:400px;
+    }
+
+    .carousel-block i{
+        background-color: transparent;
+        font-size: 36px;
+        padding:8px;
+    }
+    
+    .carousel-block h4{
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    
+    .column p {
+        flex-basis: calc(40%); 
+        margin-bottom: 4px;
+        font-size: 12px;
+    }
+
+    .column2 p {
+        flex-basis: calc(50%); 
+        margin-bottom: 4px; 
+        font-size: 12px;
+    }
+
+    .column3 p {
+        flex-basis: calc(45%); 
+        margin-bottom: 4px; 
+        font-size: 12px;
+    }
+
+    .socials{
+        gap: 12px;
+        font-size: 20px;
+        align-items: center;
+     }
+
+     footer{
+        font-size: 11px;
+    } 
+}
+
+@media only screen and (min-width: 360px) and (max-width: 579px){
+
+    body{
+        margin-left:8px; 
+        margin-right:8px;
+    }
+
+    #name h2 {
+        font-size: 16px;
+        white-space: nowrap;  
+    }
+    
+    #name p {     
+        font-size: 10px;    
+    }
+    
+    #name {    
+        gap:24px; 
+        margin-left: 10px;    
+    }
+
+    #me{
+        width:200px;
+    }
+
+    nav h1{
+        font-size: 24px;
+    }
+
+    nav{
+        font-size: 14px;
+    }
+
+    #about{
+        padding: 8px;    
+        gap:16px;
+        height:360px;      
+    }
+
+    #about h2{     
+        font-size: 20px;    
+    }
+
+    #about p{
+        width:320px;
+        font-size: 12px;
+    }
+   
+    #about button{
+        font-size: 10px;
+    }
+
+    #button1{
+        left:66%;
+        font-size: 9px;
+    }
+
+    #button2{
+        left:35%;
+        font-size: 9px;
+    }
+  
+    #skills{
+        height: 800px;      
+    }
+    
+    #skills h3{
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #carousel {    
+        gap: 8px;
+        margin-top: 48px;
+              
+    } 
+    
+    .carousel-block{
+        width:300px;       
+    }
+
+    .carousel-block i{
+        background-color: transparent;
+        font-size: 24px;
+        padding:8px;
+    }
+    
+    .carousel-block h4{
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    
+    .column p {
+        flex-basis: calc(60%); 
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+
+    .column2 p {
+        flex-basis: calc(80%); 
+        margin-bottom: 4px; 
+        font-size: 14px;
+    }
+
+    .column3 p {
+        flex-basis: calc(80%); 
+        margin-bottom: 4px; 
+        font-size: 14px;
+    }
+
+    .socials{
+        gap: 8px;
+        font-size: 14px;
+    }
+
+     footer{
+        font-size: 9px;
+    } 
+}

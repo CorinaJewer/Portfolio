@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    margin-left:48px;
+    margin-right: 48px;  
+}
+
+header {
+    display: flex;
+    flex-direction: column; 
+    background-color: black;    
+}
+  
+#nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    width:100%;
+    padding: 8px;  
+}
+
+#nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+#nav a:hover{
+    transform: translateY(-4px);
+}
+
+nav h1{
+    font-size: 48px;
+}
+
+#qap1,
+#midterm,
+#semester1,
+#final-sprint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDEDED; 
+    padding: 24px; 
+    margin-bottom: 36px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    gap:16px;
+}
+
+#final-sprint{
+    margin-bottom: 0;
+}
+
+#redmaple,
+#booknook,
+#mec,
+#buyify {
+    padding: 16px;
+    text-align: left;
+    max-width: 100%;
+    width:100%;
+}
+
+#redmaple p,
+#booknook p,
+#mec p,
+#buyify p {
+    line-height: 1.5;
+    color: #333;
+    font-size: 16px;
+}
+
+.red {
+    color: #AA0000; 
+}
+
+#video,
+#video2,
+#video3,
+#video4 {
+    padding:16px;    
+    background-color:white;
+    border-radius:8px;
+    opacity: 90%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+#qap1,
+#midterm h2,
+#semester1 h2,
+#final-sprint h2{
+    font-weight: bold;
+}
+
+footer{
+    background-color:black;
+    color:white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+#connect{
+    align-items: center;
+}
+
+.socials{
+   display: flex;
+   gap: 24px;
+   font-size: 30px;
+   align-items: center;
+}
+
+.socials a {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease-in-out;
+}
+
+.socials a:hover {
+    transform: translateY(-4px); 
+}
+
+#copy{
+  margin-top: 72px;
+}
+
+.contact-info i {
+    margin-right: 10px; 
+}
+
+
+@media only screen and (min-width: 620px) and (max-width: 1119px) {
+    body {
+        margin-left: 24px;
+        margin-right:24px;
+    }
+
+    nav h1{
+        font-size: 36px;
+    }
+
+    #qap1,
+    #midterm,
+    #semester1,
+    #final-sprint {
+        display: flex;
+        flex-direction: column;       
+        align-items: center;
+        justify-content: center; 
+        gap:16px;  
+    }
+
+    #redmaple,
+    #booknook,
+    #mec,
+    #buyify {
+        padding: 8px;
+        text-align: center; 
+        margin-bottom: 0px;
+        width:90%;       
+    }
+
+    #redmaple p,
+    #booknook p,
+    #mec p,
+    #buyify p {
+        font-size: 16px; 
+        margin-bottom: 8px;       
+    }
+
+    #video,
+    #video2,
+    #video3,
+    #video4 {
+        width:90%;
+    }
+
+
+    .socials {
+        font-size: 20px;
+        gap: 14px;
+    }
+
+    #copy {
+        margin-top: 64px;
+    }
+
+    footer{
+        font-size:12px;
+        }
+    }
+
+
+@media only screen and (min-width: 360px) and (max-width: 619px) {
+    body {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    nav h1{
+        font-size: 24px;
+    }
+
+    nav{
+        font-size: 14px;
+    }
+        
+    #qap1,
+    #midterm,
+    #semester1,
+    #final-sprint {
+        display: flex;
+        flex-direction: column;       
+        align-items: center;
+        justify-content: center; 
+        gap:8px;  
+    }
+
+    #redmaple,
+    #booknook,
+    #mec,
+    #buyify {
+        padding: 8px;
+        text-align: center; 
+        margin-bottom: 0px;           
+    }
+
+    #redmaple p,
+    #booknook p,
+    #mec p,
+    #buyify p {
+        font-size: 14px; 
+        margin-bottom: 8px;   
+    }
+
+    
+    .socials {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    #copy {
+        margin-top: 64px;
+    }
+
+    footer{
+        font-size:9px;
+        }
+    }
+

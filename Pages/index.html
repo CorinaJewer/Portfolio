@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corina Jewer Portfolio</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://kit.fontawesome.com/aac5dd37e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div id = nav>
+                <h1>CJ</h1>
+                <a href = "index.html">Home</a>
+                <a href = "./portfolio.html">Projects</a>
+                <a href = "./contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div id = intro>
+            <div id = name>
+                <h2>Corina Jewer</h2>
+                <p>Web Developer & Digital Strategist:<br/> "Elevating Brands, Driving Sales"</p>
+            </div>
+            <img id = "me" src = "/Images/IMG_1133.jpg" alt = "Corina Jewer's Photo"/>            
+        </div>
+    </header>
+
+    <main>
+        <section id = "about">
+            <h2>About Me</h2>
+            <p>Hello, I'm Corina—a versatile professional who combines sales and finance know-how with the technical side of software development and the strategic aspects of digital marketing. My skill for understanding client needs and translating them into tailored solutions has allowed me to build many successful client relationships, consistently exceed targets, and deliver exceptional results. I firmly believe that service comes from the heart not a manual. </p>
+            <button onclick="goToContact()" aria-label = "Contact Me">Contact Me</button>
+        </section> 
+        
+        <section id="skills">
+            <h3>Web + Marketing + Sales: "Bridging the Digital Success Gap"</h3>
+        
+            <div id = "carousel">
+                <button class="carousel-btn prev-btn" onClick = "previousSlide()" aria-label = "Previous"><span class="material-symbols-outlined">chevron_left
+                </span></button>   
+            
+                <div class = "carousel-block" aria-label = "Software Development">
+                    <i class="fa-brands fa-github"></i>
+                    <h4>Software Development</h4><br/>                
+                
+                    <div class = "column">
+                        <p>Javascript</p>
+                        <p>Python</p>
+                        <p>HTML</p>
+                        <p>CSS Styling</p>
+                        <p>CSS Flexbox</p>
+                        <p>CSS Grid</p>
+                        <p>node.js</p>
+                        <P>React.js</P>
+                        <p>Responsive Design</p>
+                        <p>DOM Manipulation</p>
+                        <p>Asynchronous JavaScript</p>                              
+                        <p>API Integration</p>
+                        <p>UX/UI Design Principles</p>
+                        <p>Framer</p>
+                        <p>Figma</p>
+                        <p>Trello</p>
+                        <p>Agile Methodologies</p>
+                        <p>VS Code</p>
+                        <p>GitHub</p>
+                        <p>Unit Testing</p>
+                        <p>AWS Cloud Foundations</p>
+                    </div>
+                
+                </div>
+
+                <div class = "carousel-block" aria-label = "Digital Marketing">
+                    <i class="fa-solid fa-desktop"></i>
+                    <h4>Digital Marketing</h4><br/>   
+                    
+                    <div class = "column2">
+                        <p>Search Engine Optimization</p>
+                        <p>Content Creation and Curation</p>
+                        <p>Content Strategy Development</p>
+                        <p>Content Distribution</p>
+                        <p>Social Media Advertising</p>
+                        <p>Writing Compelling Ad Copy</p>
+                        <p>Ad Campaign Management</p>
+                        <p>FaceBook Auto Inventory Ads</p>
+                        <p>Web Analytics(Google)</p>
+                        <p>A/B Testing</p>
+                        <p>Customer Journey Mapping</p>
+                        <p>Understanding of Visual Branding</p>
+                        <p>Digital Optimization</p>
+                        <p>Managing Budget</p>
+                        <p>SalesForce</p>
+                        <p>Canva Design Tool</p>
+                    </div> 
+                </div>
+
+                <div class = "carousel-block" area label = "Finance and Sales Management">    
+                    <i class="fa-solid fa-award"></i>
+                    <h4>Finance & Sales Management</h4><br/> 
+
+                    <div class = "column3">
+                        <p>Conducting Needs Assesments</p>
+                        <p>Consultative Product Presentations</p>
+                        <p>Customer-Centric Focus</p>
+                        <p>Effective Communicator</p>
+                        <p>Conflict Resolution</p>
+                        <p>Neogiation Skills</p>
+                        <p>Training</p>
+                        <p>Process Development</p>
+                        <p>Credit Analysis</p>
+                        <p>Auto Finance Programs (All Banks)</p>
+                        <p>Industry Awarded Top Performer</p>
+                        <p>Internet Lead Generation</p>
+                        <p>Compliance & Regulation</p>
+                        <p>Upselling & Cross-Selling</p>
+                        <p>Insurance Products</p>
+                        <p>Ethical Conduct</p>
+                    </div> 
+                </div>
+                
+                <button class="carousel-btn next-btn" onClick = "nextSlide()" aria-label = "Next"><span class="material-symbols-outlined">chevron_right
+                </span></button>                
+            </div>
+            
+        </section>
+
+        <section id = portfolio>   
+            <button id = "button1" onclick = "goToProjects()" aria-label = "Explore My Projects">Explore My Projects</button>
+            <button id = "button2" onclick = "goToGithub()" aria-label = "GitHub Repository">GitHub Repository</button>
+            <img src="/Images/ben-kolde-bs2Ba7t69mM-unsplash (1).jpg" width = 100% height = 500px/>
+        </section> 
+
+    </main>
+
+    <footer>
+        <div id = "connect">
+            <h3>Let's Connect!</h3><br/>
+        <div class = "contact-info">
+            <p><i class="fa-solid fa-envelope"></i>corina.jewer@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>(709)-282-8311</p>
+        </div>
+        </div>
+        <div class = "socials">
+            <a href = "https://www.instagram.com/corinachev?" target = "_blank" aria-label = "Instagram"><i class="fa-brands fa-instagram"></i>        </a>
+            <a href="https://linkedin.com/in/corina-jewer-709lw24" target="_blank" aria-label = "LinkedIn"><i class="fab fa-linkedin">  </i></a>
+            <a href = "https://www.youtube.com/@corinajewer997" target = "_blank" aria-label = "YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href = "https://www.facebook.com/corina.jewer.391" target = "_blank" aria-label = "Facebook"><i class="fa-brands fa-facebook"></i></a>                   
+        </div>  
+        <div id = "copy">
+            <p>&copy; 2023 Corina Jewer</p>
+        </div> 
+    </footer>
+
+<script src="/script.js"></script> 
+
+</body>
+</html>
